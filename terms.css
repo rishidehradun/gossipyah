@@ -1,0 +1,238 @@
+/* GossipYah Terms & Privacy Policy Styles */
+
+:root {
+    --color-black: #0a0a0a;
+    --color-white: #ffffff;
+    --color-gold: #D4AF37;
+    --color-light-gold: #FFD700;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-black);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    width: 100%;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: var(--color-gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: var(--color-light-gold);
+}
+
+.back-link::before {
+    content: "←";
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--color-gold);
+    font-size: clamp(2.2em, 5vw, 3em);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+
+.last-updated {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95em;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: border-color 0.3s;
+}
+
+.section:hover {
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+.section h2 {
+    font-family: var(--font-heading);
+    color: var(--color-gold);
+    font-size: clamp(1.6em, 4vw, 2em);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.section h3 {
+    font-family: var(--font-heading);
+    color: var(--color-light-gold);
+    font-size: clamp(1.3em, 3vw, 1.6em);
+    margin: 25px 0 15px 0;
+}
+
+.section p {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05em;
+}
+
+.section ul, .section ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.section li {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.section strong {
+    color: var(--color-gold);
+}
+
+.section em {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+.section a {
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section a:hover {
+    color: var(--color-light-gold);
+    text-decoration: underline;
+}
+
+.highlight-box {
+    background-color: rgba(212, 175, 55, 0.1);
+    border-left: 4px solid var(--color-gold);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.highlight-box p {
+    margin-bottom: 0;
+}
+
+.contact-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+    border: 2px solid var(--color-gold);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-box h2 {
+    font-family: var(--font-heading);
+    color: var(--color-gold);
+    font-size: clamp(1.6em, 4vw, 2em);
+    margin: 0 0 15px 0;
+}
+
+.contact-box p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-box a:hover {
+    color: var(--color-light-gold);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95em;
+    margin: 10px 0;
+}
+
+footer a {
+    color: var(--color-gold);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-light-gold);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px 60px;
+    }
+    
+    .section {
+        padding: 20px;
+    }
+    
+    .contact-box {
+        padding: 25px 20px;
+    }
+    
+    .section ul, .section ol {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        font-size: 1em;
+    }
+    
+    .last-updated {
+        font-size: 0.85em;
+    }
+}

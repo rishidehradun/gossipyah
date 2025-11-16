@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Blog - GossipYah | Gurgaon Gossip, Events & Restaurant News</title>
+    <meta name="description" content="Read the latest gossip, restaurant reviews, event coverage, and nightlife updates from Gurgaon's premier insider newsletter. Your source for Cyber City, Golf Course Road, and MG Road news.">
+    
+    <link rel="canonical" href="https://www.gossipyah.com/blog.html">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts - Optimized -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <link rel="stylesheet" href="blog.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "GossipYah Blog",
+      "description": "Gurgaon's insider blog covering events, restaurants, nightlife, and social scene updates",
+      "url": "https://www.gossipyah.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "GossipYah",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.gossipyah.com/images/gossipyah-logo.png"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="GossipYah Home">GossipYah</a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Why Subscribe</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+                <li><a href="index.html#subscribe">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="blog-hero">
+        <div class="container">
+            <h1>The GossipYah Blog</h1>
+            <p class="hero-subtitle">Where Gurgaon's gossip gets the full story treatment. <em>Because some tea needs more than 280 characters.</em></p>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <h2 class="visually-hidden">Filter Posts by Category</h2>
+            <div class="filter-buttons" role="group" aria-label="Blog post filters">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All Posts</button>
+                <button class="filter-btn" data-filter="restaurants" aria-pressed="false">Restaurants</button>
+                <button class="filter-btn" data-filter="nightlife" aria-pressed="false">Nightlife</button>
+                <button class="filter-btn" data-filter="events" aria-pressed="false">Events</button>
+                <button class="filter-btn" data-filter="gossip" aria-pressed="false">Gossip</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <main class="blog-grid-section">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Blog Card 1 -->
+                <article class="blog-card" data-category="restaurants">
+                    <div class="card-image">
+                        <!-- FIXED: Added width/height and better alt text -->
+                        <img src="images/blog/restaurant-placeholder.jpg" 
+                             alt="New Italian and contemporary restaurants opening on Golf Course Road Gurgaon in November 2024" 
+                             width="800" 
+                             height="500" 
+                             loading="lazy">
+                        <span class="card-tag">Restaurants</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <time datetime="2024-11-10">November 10, 2024</time>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <h2>10 New Restaurants Opening on Golf Course Road This Month</h2>
+                        <p>From that Italian place everyone's been waiting for to the secret speakeasy that's not-so-secret anymore. Here's what's actually worth your time (and money).</p>
+                        <!-- FIXED: Changed to button since page doesn't exist yet -->
+                        <button class="read-more" disabled style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card" data-category="nightlife">
+                    <div class="card-image">
+                        <img src="images/blog/nightlife-placeholder.jpg" 
+                             alt="MG Road nightlife guide showing popular bars and clubs in Gurgaon" 
+                             width="800" 
+                             height="500" 
+                             loading="lazy">
+                        <span class="card-tag">Nightlife</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <time datetime="2024-11-08">November 8, 2024</time>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <h2>The Definitive Guide to MG Road After Dark</h2>
+                        <p>Which clubs actually let you in, where the cover charge is worth it, and why that new place in Sector 29 is already over. <em>You're welcome.</em></p>
+                        <button class="read-more" disabled style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card" data-category="events">
+                    <div class="card-image">
+                        <img src="images/blog/events-placeholder.jpg" 
+                             alt="Cyber City events calendar featuring corporate and social events in Gurgaon" 
+                             width="800" 
+                             height="500" 
+                             loading="lazy">
+                        <span class="card-tag">Events</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <time datetime="2024-11-05">November 5, 2024</time>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <h2>Cyber City Events Calendar: What's Actually Worth Attending</h2>
+                        <p>We filtered through 47 "exclusive" events so you don't have to. Here are the 5 that aren't just LinkedIn bait.</p>
+                        <button class="read-more" disabled style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 -->
+                <article class="blog-card" data-category="gossip">
+                    <div class="card-image">
+                        <img src="images/blog/gossip-placeholder.jpg" 
+                             alt="Gurgaon restaurant gossip and insider news from DLF Phase 3" 
+                             width="800" 
+                             height="500" 
+                             loading="lazy">
+                        <span class="card-tag">Gossip</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <time datetime="2024-11-03">November 3, 2024</time>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <h2>Why That Popular Restaurant in DLF Phase 3 Suddenly Closed</h2>
+                        <p>Spoiler: It wasn't "renovations." The real story involves a celebrity chef, a landlord dispute, and one very angry Instagram post that disappeared within hours.</p>
+                        <button class="read-more" disabled style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 5 -->
+                <article class="blog-card" data-category="restaurants">
+                    <div class="card-image">
+                        <img src="images/blog/brunch-placeholder.jpg" 
+                             alt="Best brunch spots in Gurgaon featuring cafes and restaurants" 
+                             width="800" 
+                             height="500" 
+                             loading="lazy">
+                        <span class="card-tag">Restaurants</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <time datetime="2024-11-01">November 1, 2024</time>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <h2>Gurgaon's Best Brunch Spots That Won't Break Your Weekend</h2>
+                        <p>Yes, the avocado toast is overpriced. No, you shouldn't pay ₹2000 for eggs. Here's where to actually brunch without the Instagram tax.</p>
+                        <button class="read-more" disabled style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 6 -->
+                <article class="blog-card" data-category="nightlife">
+                    <div class="card-image">
+                        <img src="images/blog/bars-placeholder.jpg" 
+                             alt="New cocktail bars opening in Gurgaon with craft drinks" 
+                             width="800" 
+                             height="500" 
+                             loading="lazy">
+                        <span class="card-tag">Nightlife</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <time datetime="2024-10-28">October 28, 2024</time>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <h2>3 New Bars That Actually Get Cocktails Right</h2>
+                        <p>Finally, bartenders who know that "shaken not stirred" isn't just a movie quote. Our brutally honest review of Gurgaon's newest watering holes.</p>
+                        <button class="read-more" disabled style="opacity: 0.6; cursor: not-allowed;">Coming Soon →</button>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="load-more-btn">Load More Gossip</button>
+                <p class="load-more-text"><em>Or just subscribe to the newsletter and get it delivered monthly. We're not judging.</em></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Don't Want to Miss a Post?</h2>
+                <p>Subscribe to our monthly newsletter and get all this gossip (plus exclusive stuff that never makes it to the blog) delivered via WhatsApp.</p>
+                <a href="index.html#subscribe" class="cta-button">Subscribe for Free</a>
+                <p class="cta-fine-print"><em>Still free. Still monthly. Still worth it.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About GossipYah</h3>
+                    <p>Gurgaon's premier monthly gossip and events newsletter. Get insider access to the millennium city's hottest happenings.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Coverage Areas</h3>
+                    <ul class="footer-links">
+                        <li>Cyber City & DLF Cyber Hub</li>
+                        <li>Golf Course Road</li>
+                        <li>MG Road & Sector 29</li>
+                        <li>All Gurgaon/Gurugram</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:contact@gossipyah.com">contact@gossipyah.com</a></p>
+                    <p><a href="tel:+917505323084">+91-7505323084</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GossipYah. All rights reserved. | Gurgaon, Haryana, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/917505323084" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contact us on WhatsApp">
+        <span class="whatsapp-icon">💬</span> Chat
+    </a>
+
+    <script src="blog.js" defer></script>
+</body>
+</html>
