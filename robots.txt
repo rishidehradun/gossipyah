@@ -1,0 +1,94 @@
+# robots.txt for GossipYah - Gurgaon's Premier Gossip Newsletter
+# https://www.gossipyah.com/robots.txt
+# Last Updated: November 9, 2024
+
+# Global rules for all user agents
+User-agent: *
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Disallow specific scripts that don't need indexing
+Disallow: /behavior-tracker.js
+Disallow: /script.js
+
+# Allow all images
+Allow: /images/
+
+# Sitemap location (critical for SEO)
+Sitemap: https://www.gossipyah.com/sitemap.xml
+
+# Rules for Googlebot - Most Important
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+Disallow: /behavior-tracker.js
+Disallow: /script.js
+
+# Rules for Googlebot Image
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Rules for other major search engines
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Moderate crawl rate for SEO tools
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 10
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 10
+
+# Block known bad bots
+User-agent: MauiBot
+Disallow: /
+
+User-agent: AlphaBot
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://www.gossipyah.com/</loc>
+        <lastmod>2024-11-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- FAQ Page - High Priority (Important for SEO) -->
+    <url>
+        <loc>https://www.gossipyah.com/faq.html</loc>
+        <lastmod>2024-11-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Terms & Privacy Page - Medium Priority (Legal requirement) -->
+    <url>
+        <loc>https://www.gossipyah.com/terms.html</loc>
+        <lastmod>2024-11-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Privacy Policy Page (if separate from terms) -->
+    <url>
+        <loc>https://www.gossipyah.com/privacy.html</loc>
+        <lastmod>2024-11-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Additional pages can be added here as your site grows -->
+    <!-- Example for future blog pages:
+    <url>
+        <loc>https://www.gossipyah.com/blog.html</loc>
+        <lastmod>2024-11-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    -->
+    
+</urlset>
