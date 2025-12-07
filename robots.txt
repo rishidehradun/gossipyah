@@ -1,32 +1,49 @@
 # robots.txt for GossipYah - Gurgaon's Premier Gossip Newsletter
 # https://www.gossipyah.com/robots.txt
-# Last Updated: November 9, 2024
+# Last Updated: December 7, 2025
 
 # Global rules for all user agents
 User-agent: *
 Allow: /
 Allow: /*.css$
 Allow: /*.js$
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /private/
-
-# Disallow specific scripts that don't need indexing
-Disallow: /behavior-tracker.js
-Disallow: /script.js
-
-# Allow all images
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
 Allow: /images/
 
+# Block only private/admin areas (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /*.bak$
+Disallow: /*~$
+
+# Block duplicate content
+Disallow: /index.html
+Disallow: /faq.txt
+
+# Allow specific important files
+Allow: /script.js
+Allow: /blog.js
+Allow: /faq.js
+Allow: /styles.css
+Allow: /blog.css
+Allow: /faq.css
+Allow: /terms.css
+
 # Sitemap location (critical for SEO)
-Sitemap: https://www.gossipyah.com/sitemap.xml
+Sitemap: https://gossipyah.com/sitemap.xml
 
 # Rules for Googlebot - Most Important
 User-agent: Googlebot
 Allow: /
+Allow: /*.js$
+Allow: /*.css$
 Crawl-delay: 0
-Disallow: /behavior-tracker.js
-Disallow: /script.js
 
 # Rules for Googlebot Image
 User-agent: Googlebot-Image
@@ -35,6 +52,8 @@ Allow: /images/
 # Rules for Bing
 User-agent: Bingbot
 Allow: /
+Allow: /*.js$
+Allow: /*.css$
 Crawl-delay: 0
 
 # Rules for other major search engines
